@@ -1,0 +1,104 @@
+model/builder/ClientBuilder.java
+ model.builder.ClientBuilder
+controller/LoginController.java
+ controller.LoginController
+ controller.LoginController$LoginButtonListener
+ controller.LoginController$RegisterButtonListener
+repository/client/ClientRepository.java
+ repository.client.ClientRepository
+view/LoginView.java
+ view.LoginView
+view/AdminView.java
+ view.AdminView
+repository/user/UserRepositoryMySQL.java
+ repository.user.UserRepositoryMySQL
+repository/Cache.java
+ repository.Cache
+util/ConfirmBox.java
+ util.ConfirmBox
+database/JDBConnectionWrapper.java
+ database.JDBConnectionWrapper
+model/validator/ResultFetchException.java
+ model.validator.ResultFetchException
+model/User.java
+ model.User
+service/user/UserServiceImplementation.java
+ service.user.UserServiceImplementation
+model/Account.java
+ model.Account
+repository/EntityNotFoundException.java
+ repository.EntityNotFoundException
+util/AlertBox.java
+ util.AlertBox
+model/Client.java
+ model.Client
+service/client/ClientServiceImplementation.java
+ service.client.ClientServiceImplementation
+DTO/UserDTO.java
+ DTO.UserDTO
+service/client/ClientService.java
+ service.client.ClientService
+launcher/Launcher.java
+ launcher.Launcher
+database/Constants.java
+ database.Constants
+ database.Constants$Schemas
+ database.Constants$Tables
+model/validator/Notification.java
+ model.validator.Notification
+service/user/AuthenticationService.java
+ service.user.AuthenticationService
+model/validator/UserValidator.java
+ model.validator.UserValidator
+database/DBConnectionFactory.java
+ database.DBConnectionFactory
+repository/client/ClientRepositoryImplementation.java
+ repository.client.ClientRepositoryImplementation
+service/user/UserService.java
+ service.user.UserService
+launcher/ComponentFactory.java
+ launcher.ComponentFactory
+model/builder/AccountBuilder.java
+ model.builder.AccountBuilder
+DTO/fxml/ClientFXML.java
+ DTO.fxml.ClientFXML
+DTO/fxml/UserFXML.java
+ DTO.fxml.UserFXML
+DTO/AccountDTO.java
+ DTO.AccountDTO
+model/builder/UserBuilder.java
+ model.builder.UserBuilder
+DTO/ClientDTO.java
+ DTO.ClientDTO
+service/user/AuthenticationServiceMySQL.java
+ service.user.AuthenticationServiceMySQL
+repository/user/UserRepository.java
+ repository.user.UserRepository
+controller/LoginControllerFX.java
+ controller.LoginControllerFX
+repository/account/AccountRepository.java
+ repository.account.AccountRepository
+model/builder/ActivityBuilder.java
+ model.builder.ActivityBuilder
+service/activity/ActivityServiceImplementation.java
+ service.activity.ActivityServiceImplementation
+service/account/AccountService.java
+ service.account.AccountService
+service/activity/ActivityService.java
+ service.activity.ActivityService
+repository/activity/ActivityRepository.java
+ repository.activity.ActivityRepository
+repository/activity/ActivityRepositoryImplementation.java
+ repository.activity.ActivityRepositoryImplementation
+controller/AdminController.java
+ controller.AdminController
+model/Activity.java
+ model.Activity
+service/account/AccountServiceImplementation.java
+ service.account.AccountServiceImplementation
+DTO/fxml/AccountFXML.java
+ DTO.fxml.AccountFXML
+repository/account/AccountRepositoryImplementation.java
+ repository.account.AccountRepositoryImplementation
+controller/UserController.java
+ controller.UserController
