@@ -12,11 +12,9 @@ import java.util.List;
 public class ActivityRepositoryImplementation implements ActivityRepository{
 
     private final Connection connection;
-    private final UserRepository userRepository;
 
-    public ActivityRepositoryImplementation(Connection connection, UserRepository userRepository) {
+    public ActivityRepositoryImplementation(Connection connection) {
         this.connection = connection;
-        this.userRepository = userRepository;
     }
 
     @Override

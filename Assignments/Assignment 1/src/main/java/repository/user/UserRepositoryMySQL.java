@@ -135,17 +135,19 @@ public class UserRepositoryMySQL implements UserRepository {
                 .build();
     }
 
-    public void delete(int id) throws EntityNotFoundException {
+    public boolean delete(int id) throws EntityNotFoundException {
         try {
             Statement statement = connection.createStatement();
             String sql = "DELETE from user where id = " + id;
             statement.executeUpdate(sql);
+            return true;
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        return false;
     }
 
-    public void update(User user){
+    public boolean update(User user){
         try {
             PreparedStatement insertUserStatement = connection
                     .prepareStatement("UPDATE user SET username = ?, password = ?, role = ? WHERE id = " + user.getId());
@@ -154,9 +156,11 @@ public class UserRepositoryMySQL implements UserRepository {
             insertUserStatement.setString(2, user.getPassword());
             insertUserStatement.setString(3, user.getPassword());
             insertUserStatement.executeUpdate();
+            return true;
 
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        return false;
     }
 }

@@ -9,4 +9,6 @@ import java.util.ArrayList;
 public interface ActivityService {
 
     public void printAllActivitiesWithCondition(String conditionDate) throws EntityNotFoundException;
+
+    public boolean saveActivity(Activity activity);
 }

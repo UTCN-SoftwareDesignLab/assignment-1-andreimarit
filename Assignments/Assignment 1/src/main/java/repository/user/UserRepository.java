@@ -21,7 +21,7 @@ public interface UserRepository {
 
     void removeAll();
 
-    public void delete(int id) throws EntityNotFoundException;
+    public boolean delete(int id) throws EntityNotFoundException;
 
-    public void update(User user);
+    public boolean update(User user);
 }

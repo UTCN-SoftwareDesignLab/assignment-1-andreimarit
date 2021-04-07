@@ -47,7 +47,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="712.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserController">
+<VBox prefHeight="712.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserFXView">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>

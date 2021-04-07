@@ -2,6 +2,7 @@ package service.user;
 
 import DTO.UserDTO;
 import model.User;
+import repository.EntityNotFoundException;
 import repository.user.UserRepository;
 
 import java.util.ArrayList;
@@ -26,5 +27,18 @@ public class UserServiceImplementation implements UserService{
         }
 
         return usersDTO;
+    }
+
+    public boolean deleteUserById(int id) throws EntityNotFoundException {
+        return userRepository.delete(id);
+    }
+
+    public boolean saveUser(User user){
+        return userRepository.save(user);
+    }
+
+    public boolean updateUser(User user){
+        return userRepository.update(user);
+
     }
 }

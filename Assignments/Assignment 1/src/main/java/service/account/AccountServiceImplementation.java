@@ -4,6 +4,7 @@ import DTO.AccountDTO;
 import DTO.ClientDTO;
 import model.Account;
 import model.Client;
+import repository.EntityNotFoundException;
 import repository.account.AccountRepository;
 import repository.client.ClientRepository;
 
@@ -28,4 +29,18 @@ public class AccountServiceImplementation implements AccountService{
 
         return accountsDTO;
     }
+
+    @Override
+    public boolean saveAccount(Account account){
+        return accountRepository.save(account);
+    }
+
+    @Override
+    public boolean removeAccount(int id){ return accountRepository.remove(id);}
+
+    @Override
+    public Account findAccount(int id) throws EntityNotFoundException { return accountRepository.findById(id);}
+
+    @Override
+    public boolean updateAccount(Account account){ return accountRepository.update(account);}
 }

@@ -60,4 +60,9 @@ public class ActivityServiceImplementation implements ActivityService{
         }
     }
 
+    @Override
+    public boolean saveActivity(Activity activity){
+        return activityRepository.save(activity);
+    }
+
 }

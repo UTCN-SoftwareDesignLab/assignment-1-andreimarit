@@ -28,4 +28,14 @@ public class ClientServiceImplementation implements ClientService {
 
         return clientsDTO;
     }
+
+    @Override
+    public boolean saveClient(Client client){
+        return clientRepository.save(client);
+    }
+
+    @Override
+    public boolean updateClient(Client client){
+        return clientRepository.update(client);
+    }
 }
